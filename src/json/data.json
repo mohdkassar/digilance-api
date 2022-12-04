@@ -1,0 +1,106 @@
+{
+  "heading1": "WELCOME TO DIGILANCE 2",
+  "heading2": "Infinitely Possible",
+  "bio": "Empower your business by capitalizing on the synergy of creativity and technology that we have carefully cultivated. Our suite of services has been precisely developed with the goal of accelerating your business quickly and sustainably. Let’s embark on the journey of transforming your operation into a scalable empire.",
+  "heroBtn": "#",
+  "vrHeading1": "",
+  "vrHeading2": "RECEIVE A COMPLIMENTARY CONSULTANCY",
+  "vrBio": "We at DigiLance believe in a bright future, one where the benefits of technology and the beauty of the environment could both be harnessed and enjoyed. To play an active role in sculpting that future, we offer special rates and a complimentary consultation to any businesses operating in the sectors of artificial intelligence, virtual reality and sustainability.",
+  "vrBtn": "#",
+  "address": "Your Address",
+  "email": "info@digilance.net",
+  "number": "1 123 4567 8910",
+  "support": "support@digilance.net",
+  "twitter": "http://tw.digilance.net",
+  "facebook": "http://fb.digilance.net",
+  "instagram": "http://ig.digilance.net",
+  "dribbble": "http://dr.digilance.net",
+  "whatsapp": "http://wa.digilance.net",
+  "linkedIn": "http://in.digilance.net",
+  "team": [
+    {
+      "index": "1",
+      "name": "Ali Sabra",
+      "id": "TEAM-1",
+      "jobTitle": "Managing Partner",
+      "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minus laboriosam, nisi possimus culpa explicabo eum debitis, animi suscipit tempora autem sint eveniet perspiciatis illum obcaecati numquam sapiente perferendis aliquid?",
+      "email": "mailTo:ali@digilance.net",
+      "linkedIn": "http://in.mashoun.com",
+      "url": "https://drive.google.com/uc?export=view&id=1OwdDOpCrTQNIe6fPvPEzPrlBrIv6YKoc"
+    },
+    {
+      "index": "2",
+      "name": "Jason Halabi",
+      "id": "TEAM-2",
+      "jobTitle": "Managing Partner",
+      "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minus laboriosam, nisi possimus culpa explicabo eum debitis, animi suscipit tempora autem sint eveniet perspiciatis illum obcaecati numquam sapiente perferendis aliquid?",
+      "email": "mailto:jason@digilance.net",
+      "linkedIn": "http://in.mashoun.com",
+      "url": "https://drive.google.com/uc?export=view&id=15V_M0t6RhWJfoIJulwreR1JaLqr5B7Ej"
+    }
+  ],
+  "dm": [
+    {
+      "index": "1",
+      "title": "SEO",
+      "id": "DigitalMarketing-1",
+      "description": "Be in the right place, at the right time, with the right message. Our mastery over the art and science of search engine optimization ensures that your website gets the visibility it needs to generate an endless stream of leads."
+    },
+    {
+      "index": "2",
+      "title": "Social Media",
+      "id": "DigitalMarketing-2",
+      "description": "Narrate your brand’s story and build your community. By employing our stylish, innovative, and data-driven approach, your social media presence will transform into a tour de force that commands the attention of the online community."
+    },
+    {
+      "index": "3",
+      "title": "Copy Writing",
+      "id": "DigitalMarketing-3",
+      "description": "Communicate in a language that resonates with your customers. With masterful copywriting that calibrates your tone of voice to your desired target, you can rest assured that your audience will not only hear you but listen to you."
+    }
+  ],
+  "dd1": "Be in the right place, at the right time, with the right message. Our mastery over the art and science of search engine optimization ensures that your website gets the visibility it needs to generate an endless stream of leads.",
+  "dd2": "Narrate your brand’s story and build your community. By employing our stylish, innovative, and data-driven approach, your social media presence will transform into a tour de force that commands the attention of the online community.",
+  "dd3": "Communicate in a language that resonates with your customers. With masterful copywriting that calibrates your tone of voice to your desired target, you can rest assured that your audience will not only hear you but listen to you.",
+  "dt1": "Be in the right place, at the right time, with the right message. Our mastery over the art and science of search engine optimization ensures that your website gets the visibility it needs to generate an endless stream of leads.",
+  "dt2": "Narrate your brand’s story and build your community. By employing our stylish, innovative, and data-driven approach, your social media presence will transform into a tour de force that commands the attention of the online community.",
+  "agr1": {
+    "title": "One Time",
+    "heading1": "RECEIVE YOUR RE-INFORCEMENTS",
+    "heading2": "Start Up",
+    "list": [
+      "Creative Excution",
+      "\r\nCopyWriting Services",
+      "\r\nMarketing Strategies",
+      "\r\nLogowork and Branding",
+      "\r\nWeb & App Development"
+    ],
+    "url": "http://link.digilance.net"
+  },
+  "agr2": {
+    "title": "6 Month +",
+    "heading1": "CAPTURE YOUR OPPORTUNITIES",
+    "heading2": "Grow",
+    "list": [
+      "Startup services",
+      "\r\nRetainer Offering",
+      "\r\nMonthly Intelligence",
+      "\r\nComunity Intelligence",
+      "\r\nContinuous Development"
+    ],
+    "url": "http://link.digilance.net"
+  },
+  "agr3": {
+    "title": "12 Month +",
+    "heading1": "MAXIMIZE YOUR GAINS",
+    "heading2": "Accelerate",
+    "list": [
+      "Grow Services",
+      "\r\nBiweekly Intelligence",
+      "\r\nDigitale Transformation",
+      "\r\nInfrastructure Development",
+      "\r\nBusiness Development Roadmap"
+    ],
+    "url": "http://link.digilance.net"
+  }
+}

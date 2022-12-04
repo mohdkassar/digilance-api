@@ -1,0 +1,22 @@
+{
+  "apps": [
+    {
+      "name": "digilance-api",
+      "cwd": "/apps/digilance-api/dist",
+      "script": "index.js",
+      "exec_mode": "cluster",
+      "instances": 1,
+      "instance_var": "DIGILANCE_API",
+      "watch": false,
+      "autorestart": true,
+      "merge_logs": true,
+      "error_file": "/var/log/EV/digilance-api.log",
+      "out_file": "/var/log/EV/digilance-api.log",
+      "env": {
+        "NODE_ENV": "config",
+        "NODE_CONFIG_DIR": "/apps/digilance-api/config",
+        "UV_THREADPOOL_SIZE": 10
+      }
+    }
+  ]
+}

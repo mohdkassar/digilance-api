@@ -1,0 +1,43 @@
+{
+  "name": "digilance-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:prod": "npm run tslint && npm run clean:dist && tsc && npm run copy",
+    "copy": "npm run copy-assets && npm run copy-proto",
+    "copy-assets": "copyfiles -u 1 \"./src/**/*.json\" \"./dist/\"",
+    "copy-proto": "copyfiles -u 1 \"./src/**/*.proto\" \"./dist/\"",
+    "copy-pck-json": "copyfiles \"./package*.json\" \"./dist/\"",
+    "routes": "tsoa spec-and-routes",
+    "clean:dist": "rimraf dist",
+    "lint": "npm run tslint \"src/**/*.ts\"",
+    "watch": "npm run routes && tsc-watch --onSuccess \"npm run dev\"",
+    "dev": "npm run copy-assets && npm run copy-proto && pm2 start ./config/pm2-config.json && pm2 logs digilance-api",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "tslint:fix": "tslint -c tslint.json -p tsconfig.json --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/config": "0.0.38",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.12",
+    "@types/lodash": "^4.14.191",
+    "@types/mongodb": "^3.6.18",
+    "@types/multer": "^1.4.7",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "tsc-watch": "^4.4.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "tsoa": "^4.1.0"
+  }
+}

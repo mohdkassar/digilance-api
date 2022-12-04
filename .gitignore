@@ -1,0 +1,14 @@
+# logs
+log/
+logs
+
+# dependency and build directories
+dist/
+node_modules/
+jspm_packages/
+
+# dev configs
+config/*.json
+# except for these
+!pm2-template.json
+!template.json
