@@ -1,5 +1,16 @@
 {
   "api": {
     "port": 8989
-  }
+  },
+  "nodmailer": {
+    "host": "{{host}}",
+    "secure": true,
+    "port": {{port}},
+    "auth": {
+      "user": "{{user}}",
+      "pass": "{{password}}"
+    }
+  },
+  "fromEmail": "{{from_email}}",
+  "toEmail": "{{to_email}}"
 }

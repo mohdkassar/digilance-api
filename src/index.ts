@@ -14,7 +14,7 @@ class Main {
     app.use(express.json());
     app.use(
       cors({
-        origin: '*',
+        origin: '3.8.189.61',
         exposedHeaders: ['Content-Type', 'Authorization'],
         optionsSuccessStatus: 200,
       })
@@ -22,6 +22,11 @@ class Main {
 
     RegisterRoutes(app);
     app.use(this.catchValidationErrors);
+    app.use(function notFoundHandler(_req, res: express.Response) {
+      res.status(404).send({
+        message: 'Not Found',
+      });
+    });
 
     app.listen(config.get('api.port'));
     console.log(

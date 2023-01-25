@@ -58,6 +58,23 @@
 				"security": [],
 				"parameters": []
 			}
+		},
+		"/landing-page/email": {
+			"post": {
+				"operationId": "SendEmail",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": []
+			}
 		}
 	},
 	"servers": [

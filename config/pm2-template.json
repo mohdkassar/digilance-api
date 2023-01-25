@@ -2,7 +2,7 @@
   "apps": [
     {
       "name": "digilance-api",
-      "cwd": "/apps/digilance-api/dist",
+      "cwd": "/home/ubuntu/dev/repos/digilance-api/dist",
       "script": "index.js",
       "exec_mode": "cluster",
       "instances": 1,
@@ -10,11 +10,11 @@
       "watch": false,
       "autorestart": true,
       "merge_logs": true,
-      "error_file": "/var/log/EV/digilance-api.log",
-      "out_file": "/var/log/EV/digilance-api.log",
+      "error_file": "/home/ubuntu/dev/repos/log/EV/digilance-api.log",
+      "out_file": "/home/ubuntu/dev/repos/log/EV/digilance-api.log",
       "env": {
         "NODE_ENV": "config",
-        "NODE_CONFIG_DIR": "/apps/digilance-api/config",
+        "NODE_CONFIG_DIR": "/home/ubuntu/dev/repos/digilance-api/config",
         "UV_THREADPOOL_SIZE": 10
       }
     }
