@@ -1,7 +1,7 @@
 {
-  "heading1": "WELCOME TO DIGILANCE 2",
-  "heading2": "Infinitely Possible",
-  "bio": "Empower your business by capitalizing on the synergy of creativity and technology that we have carefully cultivated. Our suite of services has been precisely developed with the goal of accelerating your business quickly and sustainably. Let’s embark on the journey of transforming your operation into a scalable empire.",
+  "heading1": "Welcome to DigiLance",
+  "heading2": "Scale Your Business",
+  "bio": "We are the full-service, global digital solutions agency headquartered in Houston, Texas. Grow your business sustainably by utilizing our suit of synergistic, holistic services. Our carefully cultivated services have synergized by blending creativity and technology to deliver sustainable results. Accelerate your operations, gather more leads, and grow into a scalable empire.",
   "heroBtn": "#",
   "vrHeading1": "",
   "vrHeading2": "RECEIVE A COMPLIMENTARY CONSULTANCY",
@@ -59,14 +59,14 @@
       "description": "Communicate in a language that resonates with your customers. With masterful copywriting that calibrates your tone of voice to your desired target, you can rest assured that your audience will not only hear you but listen to you."
     }
   ],
-  "dd1": "Be in the right place, at the right time, with the right message. Our mastery over the art and science of search engine optimization ensures that your website gets the visibility it needs to generate an endless stream of leads.",
-  "dd2": "Narrate your brand’s story and build your community. By employing our stylish, innovative, and data-driven approach, your social media presence will transform into a tour de force that commands the attention of the online community.",
-  "dd3": "Communicate in a language that resonates with your customers. With masterful copywriting that calibrates your tone of voice to your desired target, you can rest assured that your audience will not only hear you but listen to you.",
-  "dt1": "Be in the right place, at the right time, with the right message. Our mastery over the art and science of search engine optimization ensures that your website gets the visibility it needs to generate an endless stream of leads.",
-  "dt2": "Narrate your brand’s story and build your community. By employing our stylish, innovative, and data-driven approach, your social media presence will transform into a tour de force that commands the attention of the online community.",
+  "dd2": "Your website is your businesses first impression. Whether it’s an E-commerce, landing page, or WordPress development, we fuse lavish style with efficient infrastructure to ensure websites that can stand the test of time.",
+  "dd1": "As apps flood your customers phones, your business must be poised to offer a smooth, seamless, and successful experience. We build applications with tried-and-true UI/UX, stunning visuals, and intuitive design.",
+  "dd3": "Specific needs require a specialized solution. Build a custom software geared towards simplifying your operation, reducing the room for error and generating better results within a shorter time frame.",
+  "dt1": "As the digital landscape grows and matures, your business must be capitalizing on all possible digital venues. Our strategies & implementation utilizes emerging technology & platforms to improve reach, be ever-present, and maximize returns.",
+  "dt2": "Not all tasks need to be labored. We search for the bottlenecks & time sinks within your operations that can be automated to free up your time, improve your performance, and reduce your costs.",
   "agr1": {
-    "title": "One Time",
-    "heading1": "RECEIVE YOUR RE-INFORCEMENTS",
+    "title": "One-Time",
+    "heading1": "RECEIVE YOUR REINFORCEMENTS",
     "heading2": "Start Up",
     "list": [
       "Creative Excution",
@@ -78,11 +78,11 @@
     "url": "http://link.digilance.net"
   },
   "agr2": {
-    "title": "6 Month +",
+    "title": "6 Months+",
     "heading1": "CAPTURE YOUR OPPORTUNITIES",
     "heading2": "Grow",
     "list": [
-      "Startup services",
+      "Startup services+",
       "\r\nRetainer Offering",
       "\r\nMonthly Intelligence",
       "\r\nComunity Intelligence",
@@ -91,13 +91,13 @@
     "url": "http://link.digilance.net"
   },
   "agr3": {
-    "title": "12 Month +",
+    "title": "12 Months+",
     "heading1": "MAXIMIZE YOUR GAINS",
     "heading2": "Accelerate",
     "list": [
-      "Grow Services",
+      "Grow Services+",
       "\r\nBiweekly Intelligence",
-      "\r\nDigitale Transformation",
+      "\r\nDigital Transformation",
       "\r\nInfrastructure Development",
       "\r\nBusiness Development Roadmap"
     ],

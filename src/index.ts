@@ -14,7 +14,7 @@ class Main {
     app.use(express.json());
     app.use(
       cors({
-        origin: '3.8.189.61',
+        origin: 'https://digilance.us',
         exposedHeaders: ['Content-Type', 'Authorization'],
         optionsSuccessStatus: 200,
       })

@@ -21,6 +21,38 @@
 				],
 				"type": "object",
 				"additionalProperties": false
+			},
+			"IEmailBody": {
+				"properties": {
+					"email": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"phone": {
+						"type": "string"
+					},
+					"website": {
+						"type": "string"
+					},
+					"consult": {
+						"type": "string"
+					},
+					"comment": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"email",
+					"name",
+					"phone",
+					"website",
+					"consult",
+					"comment"
+				],
+				"type": "object",
+				"additionalProperties": false
 			}
 		},
 		"securitySchemes": {}
@@ -73,7 +105,17 @@
 					}
 				},
 				"security": [],
-				"parameters": []
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/IEmailBody"
+							}
+						}
+					}
+				}
 			}
 		}
 	},

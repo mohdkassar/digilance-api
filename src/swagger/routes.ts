@@ -19,6 +19,19 @@ const models: TsoaRoute.Models = {
         "additionalProperties": false,
     },
     // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
+    "IEmailBody": {
+        "dataType": "refObject",
+        "properties": {
+            "email": {"dataType":"string","required":true},
+            "name": {"dataType":"string","required":true},
+            "phone": {"dataType":"string","required":true},
+            "website": {"dataType":"string","required":true},
+            "consult": {"dataType":"string","required":true},
+            "comment": {"dataType":"string","required":true},
+        },
+        "additionalProperties": false,
+    },
+    // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa
 };
 const validationService = new ValidationService(models);
 
@@ -59,6 +72,7 @@ export function RegisterRoutes(app: express.Router) {
 
             function LandingPageController_sendEmail(request: any, response: any, next: any) {
             const args = {
+                    emailBody: {"in":"body","name":"emailBody","required":true,"ref":"IEmailBody"},
             };
 
             // WARNING: This file was auto-generated with tsoa. Please do not modify it. Re-run tsoa to re-generate this file: https://github.com/lukeautry/tsoa

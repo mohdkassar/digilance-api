@@ -2,7 +2,7 @@
   "api": {
     "port": 8989
   },
-  "nodmailer": {
+  "nodemailer": {
     "host": "{{host}}",
     "secure": true,
     "port": {{port}},

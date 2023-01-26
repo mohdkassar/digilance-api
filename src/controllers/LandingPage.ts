@@ -1,13 +1,18 @@
-import _ from 'lodash';
+import { Route, Controller, Get, Post, Middlewares, Body } from 'tsoa';
+import { NextFunction, Request } from 'express';
+import nodemailer from 'nodemailer';
 import config from 'config';
-import { Route, Controller, Get, Post, Middlewares } from 'tsoa';
+
+import EmailHelper from '../helpers/EmailHelper';
+
+import landingPageData from '../json/data.json';
+import { html } from '../json/email.html';
 
 import IGenericFailureResponse from '../types/IGenericFailureResponse';
-import landingPageData from '../json/data.json';
+import INodeMailerConfig from '../types/INodemailerConfig';
+import IEmailBody from '../types/IEmailBody';
+import _ from 'lodash';
 
-import nodemailer from 'nodemailer';
-import { NextFunction, Request } from 'express';
-import INodeMailerConfig from 'INodemailerConfig';
 @Route('landing-page')
 @Middlewares([
   (req: Request, res: Response, next: NextFunction) => {
@@ -40,29 +45,38 @@ export class LandingPageController extends Controller {
   }
 
   @Post('email')
-  public async sendEmail(): Promise<any> {
+  public async sendEmail(@Body() emailBody: IEmailBody): Promise<any> {
     try {
       const nodemailerConfig: INodeMailerConfig = config.get('nodemailer');
       const fromEmail: string = config.get('fromEmail');
       const toEmail: string = config.get('toEmail');
+      const userEmail = emailBody.email;
 
       const transport = nodemailer.createTransport(nodemailerConfig);
-      const mailOptions = {
-        from: fromEmail,
-        to: toEmail,
-        subject: 'Test', // Subject line
-        html: '<p>test</p>', // plain text body
-      };
 
-      transport.sendMail(mailOptions, function (err, info) {
-        if (err) {
-          throw err;
-        }
-        return {
-          success: true,
-        };
-      });
+      EmailHelper.validateEmailBody(emailBody);
+
+      // await EmailHelper.wrapedSendMail(transport, {
+      //   from: fromEmail,
+      //   to: toEmail,
+      //   subject: "Digilance Inquiry",
+      //   html: `
+      //   <p>${emailBody.name} is inquiring about ${emailBody.consult}.</p>
+      //   <br>
+      //   <p>Their contact details are: ${emailBody.email}, ${emailBody.phone}, ${emailBody.website}.</p>
+      //   <br>
+      //   <p>Their comment was: ${emailBody.comment}</p>
+      //   `,
+      // });
+
+      // await EmailHelper.wrapedSendMail(transport, {
+      //   from: fromEmail,
+      //   to: userEmail,
+      //   subject: "Digilance Inquiry",
+      //   html,
+      // });
     } catch (error) {
+      console.error(error);
       return {
         success: false,
       };
