@@ -7,38 +7,16 @@
   "vrHeading2": "RECEIVE A COMPLIMENTARY CONSULTANCY",
   "vrBio": "We at DigiLance believe in a bright future, one where the benefits of technology and the beauty of the environment could both be harnessed and enjoyed. To play an active role in sculpting that future, we offer special rates and a complimentary consultation to any businesses operating in the sectors of artificial intelligence, virtual reality and sustainability.",
   "vrBtn": "#",
-  "address": "Your Address",
-  "email": "info@digilance.net",
+  "address": "Huston, Texas",
+  "email": "info@digilance.us",
   "number": "1 123 4567 8910",
-  "support": "support@digilance.net",
+  "support": "contact@digilance.us",
   "twitter": "http://tw.digilance.net",
   "facebook": "http://fb.digilance.net",
   "instagram": "http://ig.digilance.net",
   "dribbble": "http://dr.digilance.net",
   "whatsapp": "http://wa.digilance.net",
   "linkedIn": "http://in.digilance.net",
-  "team": [
-    {
-      "index": "1",
-      "name": "Ali Sabra",
-      "id": "TEAM-1",
-      "jobTitle": "Managing Partner",
-      "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minus laboriosam, nisi possimus culpa explicabo eum debitis, animi suscipit tempora autem sint eveniet perspiciatis illum obcaecati numquam sapiente perferendis aliquid?",
-      "email": "mailTo:ali@digilance.net",
-      "linkedIn": "http://in.mashoun.com",
-      "url": "https://drive.google.com/uc?export=view&id=1OwdDOpCrTQNIe6fPvPEzPrlBrIv6YKoc"
-    },
-    {
-      "index": "2",
-      "name": "Jason Halabi",
-      "id": "TEAM-2",
-      "jobTitle": "Managing Partner",
-      "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minus laboriosam, nisi possimus culpa explicabo eum debitis, animi suscipit tempora autem sint eveniet perspiciatis illum obcaecati numquam sapiente perferendis aliquid?",
-      "email": "mailto:jason@digilance.net",
-      "linkedIn": "http://in.mashoun.com",
-      "url": "https://drive.google.com/uc?export=view&id=15V_M0t6RhWJfoIJulwreR1JaLqr5B7Ej"
-    }
-  ],
   "dm": [
     {
       "index": "1",
@@ -64,6 +42,7 @@
   "dd3": "Specific needs require a specialized solution. Build a custom software geared towards simplifying your operation, reducing the room for error and generating better results within a shorter time frame.",
   "dt1": "As the digital landscape grows and matures, your business must be capitalizing on all possible digital venues. Our strategies & implementation utilizes emerging technology & platforms to improve reach, be ever-present, and maximize returns.",
   "dt2": "Not all tasks need to be labored. We search for the bottlenecks & time sinks within your operations that can be automated to free up your time, improve your performance, and reduce your costs.",
+  "vr": "test",
   "agr1": {
     "title": "One-Time",
     "heading1": "RECEIVE YOUR REINFORCEMENTS",

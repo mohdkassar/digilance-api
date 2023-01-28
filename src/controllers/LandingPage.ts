@@ -56,25 +56,25 @@ export class LandingPageController extends Controller {
 
       EmailHelper.validateEmailBody(emailBody);
 
-      // await EmailHelper.wrapedSendMail(transport, {
-      //   from: fromEmail,
-      //   to: toEmail,
-      //   subject: "Digilance Inquiry",
-      //   html: `
-      //   <p>${emailBody.name} is inquiring about ${emailBody.consult}.</p>
-      //   <br>
-      //   <p>Their contact details are: ${emailBody.email}, ${emailBody.phone}, ${emailBody.website}.</p>
-      //   <br>
-      //   <p>Their comment was: ${emailBody.comment}</p>
-      //   `,
-      // });
+      await EmailHelper.wrapedSendMail(transport, {
+        from: fromEmail,
+        to: toEmail,
+        subject: 'Digilance Inquiry',
+        html: `
+        <p>${emailBody.name} is inquiring about ${emailBody.consult}.</p>
+        <br>
+        <p>Their contact details are: ${emailBody.email}, ${emailBody.phone}, ${emailBody.website}.</p>
+        <br>
+        <p>Their comment was: ${emailBody.comment}</p>
+        `,
+      });
 
-      // await EmailHelper.wrapedSendMail(transport, {
-      //   from: fromEmail,
-      //   to: userEmail,
-      //   subject: "Digilance Inquiry",
-      //   html,
-      // });
+      await EmailHelper.wrapedSendMail(transport, {
+        from: fromEmail,
+        to: userEmail,
+        subject: 'Digilance Inquiry',
+        html,
+      });
     } catch (error) {
       console.error(error);
       return {
