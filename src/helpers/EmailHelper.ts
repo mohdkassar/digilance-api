@@ -1,5 +1,6 @@
 import IEmailBody from 'IEmailBody';
 import nodemailer from 'nodemailer';
+import logger from '../logger';
 
 export interface IMailOptions {
   from: string;
@@ -16,10 +17,10 @@ class EmailHelper {
     return new Promise((resolve, reject) => {
       transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
-          console.log('error is ' + error);
+          logger.error(`Failed to send email. Error message: ${error}`);
           reject(false); // or use rejcet(false) but then you will have to handle errors
         } else {
-          console.log('Email sent: ' + info.response);
+          logger.info('Email sent: ' + info.response);
           resolve(true);
         }
       });

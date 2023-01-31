@@ -5,10 +5,11 @@ import cors from 'cors';
 
 import { ValidateError } from 'tsoa';
 import { RegisterRoutes } from './swagger/routes';
+import logger from './logger';
 
 class Main {
   public async initialise(app: express.Application): Promise<void> {
-    console.log('Initialising express app startup');
+    logger.info('Initialising express app startup');
 
     app.use(express.urlencoded({ extended: true }));
     app.use(express.json());
@@ -16,9 +17,15 @@ class Main {
       cors({
         origin: '*',
         exposedHeaders: ['Content-Type', 'Authorization'],
+        methods: ['GET', 'POST', 'OPTIONS'],
+        allowedHeaders: ['Content-Type'],
         optionsSuccessStatus: 200,
       })
     );
+    app.use(function (req, res, next) {
+      res.header('Access-Control-Allow-Headers', 'Content-Type');
+      next();
+    });
 
     RegisterRoutes(app);
     app.use(this.catchValidationErrors);
@@ -29,7 +36,7 @@ class Main {
     });
 
     app.listen(config.get('api.port'));
-    console.log(
+    logger.info(
       `Express app startup complete - listening on port: ${config.get(
         'api.port'
       )}`
@@ -43,6 +50,7 @@ class Main {
     next: express.NextFunction
   ) {
     if (err instanceof ValidateError) {
+      logger.error(err);
       return res.status(400).json({
         success: false,
         message: 'Validation failed',
@@ -54,4 +62,4 @@ class Main {
   }
 }
 
-new Main().initialise(express()).catch(console.error);
+new Main().initialise(express()).catch(logger.error);

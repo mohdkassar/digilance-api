@@ -1,5 +1,4 @@
-import { Route, Controller, Get, Post, Middlewares, Body } from 'tsoa';
-import { NextFunction, Request } from 'express';
+import { Route, Controller, Get, Post, Body } from 'tsoa';
 import nodemailer from 'nodemailer';
 import config from 'config';
 
@@ -12,14 +11,14 @@ import IGenericFailureResponse from '../types/IGenericFailureResponse';
 import INodeMailerConfig from '../types/INodemailerConfig';
 import IEmailBody from '../types/IEmailBody';
 import _ from 'lodash';
+import logger from '../logger';
 
 @Route('landing-page')
-@Middlewares([
-  (req: Request, res: Response, next: NextFunction) => {
-    console.log(req.socket.remoteAddress);
-    next();
-  },
-])
+// @Middlewares([
+//   (req: Request, res: Response, next: NextFunction) => {
+//     next();
+//   },
+// ])
 export class LandingPageController extends Controller {
   @Get('data')
   public async getLandingPageData(): Promise<any | IGenericFailureResponse> {
@@ -35,7 +34,7 @@ export class LandingPageController extends Controller {
       this.setStatus(200);
       return landingPageData;
     } catch (err) {
-      console.error(
+      logger.error(
         `Error while getting landing page data; with message ${err.message}`
       );
 
@@ -76,7 +75,7 @@ export class LandingPageController extends Controller {
         html,
       });
     } catch (error) {
-      console.error(error);
+      logger.error(error);
       return {
         success: false,
       };

@@ -1,4 +1,5 @@
 {
+  "logLevel": "info",
   "api": {
     "port": 8989
   },
